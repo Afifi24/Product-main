@@ -3,14 +3,14 @@ import styled from 'styled-components'
 import Masterheader from './Masterheader'
 import Total from './Total'
 import Containermaster from './Containermaster'
-export default function Master({isopen,setisopen}) {
+export default function Master({setisstarted,isstarted}) {
   return (
     <Masterstyled>
       <Masterheader/>
       <Total/>
       <Containermaster
-      isopen= {isopen}
-      setisopen ={setisopen}
+      isstarted={isstarted}
+      setisstarted={setisstarted}
       />
     </Masterstyled>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 export default function Header({isopen,setisopen}) {
   function OpenClose (){
     setisopen(!isopen)
@@ -11,9 +12,18 @@ export default function Header({isopen,setisopen}) {
         <img src="./images/logo.svg" alt="hello there" />
      
       <ul className={`${isopen? 'toggle' : ""} `}>
-        <li>About</li>
-        <li>Discover</li>
-        <li>Get Started</li>
+        <li>
+
+        <Link  to='/'>About</Link>  
+          </li>
+        <li>
+         <Link  to='/discover'>Discover</Link> 
+
+        </li>
+        <li>
+         <Link  to='/getstarted'>Get Started</Link> 
+
+        </li>
       </ul>
       
       </Nav>
@@ -64,6 +74,12 @@ ul{
         font-size: 12px;
         font-weight: bold;
       border-radius: 20px;
+     
+
+      a{
+        color: #fff;
+        text-decoration: none;
+      }
 
     }
 }
@@ -102,4 +118,5 @@ img{
   }
   
 }
+
 `

@@ -1,9 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styled from 'styled-components'
-export default function Thanks({isopen,setisopen}) {
+export default function Thanks({isstarted,setisstarted}) {
   return (
     <Think >
-        <div className={`${isopen? 'thank':''}`} >
+        <div className={`${isstarted? 'thank':''}`} >
       <img src="./images/icon-check.svg" alt="" />
       <h2>Thanks for your support!</h2>
       <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once ou campaign is completed</p>

@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-export default function Containermaster({isopen,setisopen}) {
+export default function Containermaster({setisstarted,isstarted}) {
   function Isopen(){
-    setisopen(!isopen)
-    console.log(isopen)
+    setisstarted(!isstarted)
+    console.log(isstarted)
+
   }
   return (
     <Mastercontainer>
